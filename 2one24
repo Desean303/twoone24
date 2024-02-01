@@ -1,0 +1,25 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+
+int main() {
+	char choice = 'm';
+	while (choice != 'q') {
+		//a non-random beep in c++
+		Beep(400, 500);
+
+		//a random beep in c++
+		Beep(rand() % 1000, rand() % 1000);
+		cout << "press any key, q to quit" << endl;
+		cin >> choice;
+		cout << "you typed " << choice << endl;
+	}
+
+	
+
+	int num = 6;
+	while (num < 36) {
+		cout << num << " ";
+		num += 3;
+
+	}
